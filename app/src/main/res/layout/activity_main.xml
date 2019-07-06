@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorBackgroundLayout"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,19 +12,26 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="206dp"
+        android:id="@+id/I_Am_Poor_Text_View"
+        android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="70dp"
         android:text="@string/iAmPoor"
         android:textColor="@android:color/black"
         android:textSize="40sp" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:contentDescription="@string/imageOfRock"
+        android:id="@+id/Rock_Image_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imageOfRock"
         app:srcCompat="@drawable/coal" />
+
 </RelativeLayout>
